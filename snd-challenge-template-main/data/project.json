@@ -1,62 +1,57 @@
 [
   {
     "type": "headline",
-    "content": "Perspectives",
+    "content": "30 Years Later: Students of color detail ongoing isolation strikingly similar to that in 1995\n",
     "max_size": "100%",
     "credit": ""
   },
   {
+    "type": "subhead",
+    "content": "Interviews with current minority students at Cal Poly revealed a campus culture that remains strikingly similar to that of 30 years ago ",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
     "type": "bylines",
-    "content": "",
+    "content": "By: Carly Heltzel, Grace Gillio, Archana Pisupati, Leila Touati",
     "max_size": "450",
-    "credit": "Leila Touati"
+    "credit": ""
   },
   {
     "type": "university",
-    "content": "",
-    "max_size": "3500",
+    "content": "California Polytechnic State University",
+    "max_size": "body",
     "credit": "cp_logo.jpeg"
   },
   {
-    "type": "photo",
-    "content": "Tux.svg.png",
-    "max_size": "250",
-    "credit": "Photo of Tux"
-  },
-  {
     "type": "text",
-    "content": "There are only 182 Black students at Cal Poly, making up 0.8% of the total population, according to 2025 data. In 1995, Black students made up 1.9% of the population, more than double the current percentage. What’s more, the actual number of Black students has decreased, even as general enrollment grew steadily for the past 30 years. While enrollment of Hispanic students jumped from 12% to 28% in that same 30-year time period and Cal Poly’s Asian population increased from 8% to 13%, white students still dominate campus demographics to this day, making up 46% in 2025. ",
+    "content": "“Picture a black room and it's just you in there.”",
     "max_size": "body",
     "credit": ""
   },
   {
     "type": "photo",
-    "content": "tux.svg.png",
-    "max_size": "250",
-    "credit": "Photo of Tux"
+    "content": "Trapped in Dark Room.GIF",
+    "max_size": "1200",
+    "credit": "Graphic by Anika Loganathan"
   },
   {
     "type": "text",
-    "content": "There are only 182 Black students at Cal Poly, making up 0.8% of the total population, according to 2025 data. In 1995, Black students made up 1.9% of the population, more than double the current percentage. What’s more, the actual number of Black students has decreased, even as general enrollment grew steadily for the past 30 years. While enrollment of Hispanic students jumped from 12% to 28% in that same 30-year time period and Cal Poly’s Asian population increased from 8% to 13%, white students still dominate campus demographics to this day, making up 46% in 2025. ",
+    "content": "This is how Jaylyn Harris, president of Black Student Union, experiences Cal Poly.\n\nThere are only two other Black animal science majors in Harris’ graduating class. She is the only Black person in most of her classes and has been the only person of color in a few of them. Some days, when she walks around campus, Harris doesn’t come across a single other Black student. \n\nShe feels like she is on an island, constantly.\n\n“It’s a really strange feeling,” she said. “It's not something that I've never felt before, but it's something that I feel more intensely and more often here.”",
+    "max_size": "body",
+    "credit": ""
+  },
+
+  {
+    "type": "text",
+    "content": "Statistics show that Harris is not alone in her experience. In the 2022-2023 academic year, only 2.5% of Cal Poly’s student population identified as Black or African American, and only 4.8% identified as Hispanic or Latino, according to the university’s Institutional Research website. \n\nInterviews with current minority students at Cal Poly revealed a campus culture that remains strikingly similar to that of 30 years ago, when a group of students of color published an open letter detailing their experiences of isolation and discrimination on campus.",
     "max_size": "body",
     "credit": ""
   },
   {
-    "type": "photo",
-    "content": "tux.svg.png",
-    "max_size": "250",
-    "credit": "Photo of Tux"
-  },
-  {
     "type": "text",
-    "content": "There are only 182 Black students at Cal Poly, making up 0.8% of the total population, according to 2025 data. In 1995, Black students made up 1.9% of the population, more than double the current percentage. What’s more, the actual number of Black students has decreased, even as general enrollment grew steadily for the past 30 years. While enrollment of Hispanic students jumped from 12% to 28% in that same 30-year time period and Cal Poly’s Asian population increased from 8% to 13%, white students still dominate campus demographics to this day, making up 46% in 2025. ",
+    "content": "With the percentage of Black students enrolled at Cal Poly decreasing and the same roadblocks still existing for students of color, then what, if anything, has changed for students of color at Cal Poly in the past 30 years?",
     "max_size": "body",
     "credit": ""
-  },
-  {
-    "type": "photo",
-    "content": "tux.svg.png",
-    "max_size": "250",
-    "credit": "Photo of Tux"
   }
 ]
