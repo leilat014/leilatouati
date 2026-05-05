@@ -1,1 +1,113 @@
 /* use this sheet to add your own custom styles */
+
+#intro-scene {
+  position: relative;
+  height: 300vh;
+  background-color: #000;
+}
+
+#intro-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+body {
+  /* background-color: #000000; */
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+}
+
+.headline {
+  font-size: 9rem;
+  line-height: 1.2;
+  max-width: 100%;
+}
+
+.subhead,
+.text {
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.photo-block {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.photo-block img {
+  width: 100%;
+  display: block;
+}
+
+#trapped-gif-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  max-width: 1200px;
+  z-index: 1;
+}
+
+#trapped-gif {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease;
+  display: block;
+}
+
+#trapped-gif-wrapper .g-credit {
+  text-align: left;
+  color: #888;
+  font-size: 0.75rem;
+  font-family: Arial, sans-serif;
+  margin-top: 0.4rem;
+  padding-left: 2px;
+}
+
+#black-room-quote {
+  position: absolute;
+  top: 50%;                         /* same vertical center as the GIF */
+  left: 50%;
+  transform: translateX(-50%) translateY(60px);
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  z-index: 2;                       /* sits on top of the GIF which is z-index 1 */
+
+  background-color: rgba(0, 0, 0, 0.55);   /* darker box so text is readable over gif */
+  border-left: 3px solid white;
+  padding: 1.2rem 1.8rem;
+  max-width: 580px;
+  width: 90%;
+}
+
+#black-room-quote p {
+  color: white;
+  font-family: Georgia, serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.7rem);
+  font-style: italic;
+  text-align: left;                 /* left-aligned looks better with the border accent */
+  margin: 0;
+  line-height: 1.5;
+}
+
+#main-container > *:not(#intro-scene) {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+#main-container > *.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
