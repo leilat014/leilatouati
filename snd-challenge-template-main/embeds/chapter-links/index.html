@@ -1,0 +1,110 @@
+<div id="chapter-nav">
+  <p id="chapter-intro">Continue reading</p>
+  <div id="chapter-links">
+    <a href="#chapter-first-steps" class="chapter-card">
+      <span class="chapter-number">01</span>
+      <span class="chapter-title">The first steps on campus</span>
+    </a>
+
+    <a href="#chapter-home" class="chapter-card">
+      <span class="chapter-number">02</span>
+      <span class="chapter-title">Home, not-so-sweet, home</span>
+    </a>
+
+    <a href="#chapter-bias" class="chapter-card">
+      <span class="chapter-number">03</span>
+      <span class="chapter-title">Encounters with bias and discrimination</span>
+    </a>
+
+    <a href="#chapter-rep" class="chapter-card">
+      <span class="chapter-number">04</span>
+      <span class="chapter-title">Seeking representation</span>
+    </a>
+
+    <a href="#chapter-action" class="chapter-card">
+      <span class="chapter-number">05</span>
+      <span class="chapter-title">Performative action and deaf ears</span>
+    </a>
+
+    <a href="#chapter-sanctuary" class="chapter-card">
+      <span class="chapter-number">06</span>
+      <span class="chapter-title">A sanctuary in cultural clubs</span>
+    </a>
+
+    <a href="#chapter-light" class="chapter-card">
+      <span class="chapter-number">07</span>
+      <span class="chapter-title">Finding the light</span>
+    </a>
+  </div>
+</div>
+
+<style>
+  #chapter-nav {
+    padding: 3rem 2rem;
+    background: #000;
+    text-align: center;
+  }
+
+  #chapter-intro {
+    color: #888;
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  #chapter-links {
+    display: flex;
+    flex-wrap: wrap; /* wraps into rows automatically */
+    justify-content: center;
+    gap: 0.9rem;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .chapter-card {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.85rem 1.6rem; /* shorter height than before */
+    border: 1px solid #333;
+    border-radius: 999px; /* fully rounded pill shape */
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    white-space: nowrap; /* keeps each pill on one line */
+    transition:
+      background 0.25s ease,
+      border-color 0.25s ease;
+
+    /* removes any browser default blue link styling */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .chapter-card:hover {
+    background: #1a1a1a;
+    border-color: #555;
+    transform: none; /* removed the slide — cleaner for pill style */
+  }
+
+  /* override any inherited browser link colors */
+  .chapter-card,
+  .chapter-card:visited,
+  .chapter-card:active {
+    color: white;
+  }
+
+  .chapter-number {
+    font-size: 0.75rem;
+    color: #666;
+    letter-spacing: 0.08em;
+    flex-shrink: 0;
+  }
+
+  .chapter-title {
+    font-size: 0.95rem;
+    line-height: 1;
+  }
+</style>

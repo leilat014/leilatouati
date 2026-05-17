@@ -1,0 +1,208 @@
+<div id="ratio-section">
+  <div id="ratio-sticky">
+    <div id="ratio-text">
+      <p id="ratio-label">Cal Poly has roughly 22,000 enrolled students...</p>
+    </div>
+    <div id="ratio-grid"></div>
+    <p id="ratio-footnote">Each figure shown here represents 100 students.</p>
+  </div>
+</div>
+
+<style>
+  #ratio-section {
+    height: 400vh;
+    position: relative;
+    background: #000;
+  }
+
+  #ratio-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  #ratio-text {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    padding: 0 1rem;
+    min-height: 3rem; /* prevents layout jumping as text changes */
+  }
+
+  #ratio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    max-width: 900px;
+    padding: 0 1rem;
+  }
+
+  #ratio-footnote {
+    margin-top: 1rem;
+    color: #555;
+    font-family: Arial, sans-serif;
+    font-size: 0.72rem;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 0 1rem;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  #ratio-footnote.visible {
+    opacity: 1;
+  }
+
+  .student-unit {
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    overflow: hidden; /* clips the gif cleanly to its container */
+    flex-shrink: 0;
+  }
+
+  .student-unit img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) brightness(0.8); /* dim grey for non-Black students */
+    border-radius: 2px;
+    display: block;
+  }
+
+  /* full color + glow for Black students */
+  .student-unit.black-student img {
+    filter: brightness(1.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+  }
+
+  .student-unit.visible {
+    opacity: 1;
+  }
+
+  /* ── MOBILE FIXES ── */
+  @media (max-width: 768px) {
+    #ratio-sticky {
+      padding: 1rem;
+      justify-content: flex-start; /* stack from top instead of center */
+      padding-top: 4rem; /* breathing room from top of screen */
+    }
+
+    #ratio-text {
+      font-size: clamp(0.85rem, 4vw, 1.1rem);
+      margin-bottom: 1rem;
+    }
+
+    #ratio-grid {
+      gap: 3px; /* tighter gap on small screens */
+      max-width: 100%; /* full width */
+      padding: 0 0.5rem;
+    }
+
+    .student-unit {
+      width: 28px; /* smaller figures on mobile */
+      height: 28px;
+    }
+
+    #ratio-footnote {
+      font-size: 0.65rem;
+      margin-top: 0.6rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .student-unit {
+      width: 20px; /* even smaller on phone */
+      height: 20px;
+    }
+
+    #ratio-grid {
+      gap: 2px;
+    }
+  }
+</style>
+
+<script>
+  const TOTAL = 223; // 1 figure = 100 students, ~22,000 total
+  const BLACK = 2; // 182 Black students ≈ 2 figures at this scale
+  const GIF_SRC = "../../images/Walking in Dark.GIF";
+
+  const grid = document.getElementById("ratio-grid");
+  const label = document.getElementById("ratio-label");
+  const footnote = document.getElementById("ratio-footnote");
+
+  // build units array, mark last BLACK entries as black students
+  const units = Array.from({ length: TOTAL }, (_, i) => ({
+    index: i,
+    isBlack: i >= TOTAL - BLACK,
+  }));
+
+  // shuffle so Black figures land randomly in the grid
+  for (let i = units.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [units[i], units[j]] = [units[j], units[i]];
+  }
+
+  units.forEach((unit) => {
+    const div = document.createElement("div");
+    div.className = "student-unit" + (unit.isBlack ? " black-student" : "");
+
+    const img = document.createElement("img");
+    img.src = GIF_SRC;
+    img.alt = "";
+
+    div.appendChild(img);
+    grid.appendChild(div);
+  });
+
+  const allUnits = document.querySelectorAll(".student-unit");
+  const section = document.getElementById("ratio-section");
+
+  function updateGrid() {
+    const rect = section.getBoundingClientRect();
+    const scrolled = -rect.top;
+    const total = rect.height - window.innerHeight;
+    const progress = Math.max(0, Math.min(1, scrolled / total));
+
+    const toShow = Math.floor(progress * TOTAL);
+
+    allUnits.forEach((unit, i) => {
+      if (i < toShow) {
+        unit.classList.add("visible");
+      } else {
+        unit.classList.remove("visible");
+      }
+    });
+
+    if (progress < 0.25) {
+      label.textContent = "Cal Poly has roughly 22,000 enrolled students...";
+      footnote.classList.remove("visible");
+    } else if (progress < 0.6) {
+      label.textContent =
+        "Each figure represents 100 students. Keep scrolling.";
+      footnote.classList.remove("visible");
+    } else if (progress < 0.85) {
+      label.textContent = "Only 0.8% identify as Black or African American.";
+      footnote.classList.remove("visible");
+    } else if (progress < 0.95) {
+      label.textContent = "That's exactly 182 students on the entire campus.";
+      footnote.classList.remove("visible");
+    } else {
+      label.textContent = "2 figures out of 223. That is what 0.8% looks like.";
+      footnote.classList.add("visible");
+    }
+  }
+
+  window.addEventListener("scroll", updateGrid);
+  updateGrid();
+</script>

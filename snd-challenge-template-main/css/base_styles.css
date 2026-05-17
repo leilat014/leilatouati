@@ -1,8 +1,8 @@
 :root{
     --bgColor: #f0f0f0;
-    --darkerColor: #1f1f1f;
-    --lightColor: #474747;
-    --lighterColor: #797979;
+    --darkerColor: #7e7e7e;
+    --lightColor: #8d8d8d;
+    --lighterColor: #a5a3a3;
     --SND-turquoise: #1ca099;
 }
 body{

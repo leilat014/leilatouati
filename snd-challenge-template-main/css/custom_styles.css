@@ -1,5 +1,39 @@
 /* use this sheet to add your own custom styles */
 
+/* #intro-headline {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 900px;
+  z-index: 3;
+  text-align: center;
+} */
+
+#intro-headline h1 {
+  color: white;
+  font-family: Georgia, serif;
+  font-size: clamp(1.4rem, 3.5vw, 2.6rem);
+  line-height: 1.2;
+  margin: 0;
+}
+
+#intro-headline-block {
+  background: #000;
+  padding: 4rem 2rem 2rem;
+  text-align: center;
+}
+
+#intro-headline-block h1 {
+  color: white;
+  font-family: Georgia, serif;
+  font-size: clamp(1.4rem, 3.5vw, 2.6rem);
+  line-height: 1.2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 #intro-scene {
   position: relative;
   height: 300vh;
@@ -17,10 +51,19 @@
 }
 
 body {
-  /* background-color: #000000; */
+  color: white;
+  background-color: #000000;
   font-family: Georgia, serif;
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  color: #f0f0f0;
+}
+
+p {
+    color: #ddd7d7;
 }
 
 .headline {
@@ -31,6 +74,7 @@ body {
 
 .subhead,
 .text {
+  color: white;
   max-width: 680px;
   margin: 0 auto;
   line-height: 1.8;
@@ -75,14 +119,21 @@ body {
 
 #black-room-quote {
   position: absolute;
-  top: 50%;                         /* same vertical center as the GIF */
+  top: 50%; /* same vertical center as the GIF */
   left: 50%;
   transform: translateX(-50%) translateY(60px);
   opacity: 0;
-  transition: opacity 0.8s ease, transform 0.8s ease;
-  z-index: 2;                       /* sits on top of the GIF which is z-index 1 */
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+  z-index: 2; /* sits on top of the GIF which is z-index 1 */
 
-  background-color: rgba(0, 0, 0, 0.55);   /* darker box so text is readable over gif */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.55
+  ); /* darker box so text is readable over gif */
   border-left: 3px solid white;
   padding: 1.2rem 1.8rem;
   max-width: 580px;
@@ -94,20 +145,107 @@ body {
   font-family: Georgia, serif;
   font-size: clamp(1.1rem, 2.5vw, 1.7rem);
   font-style: italic;
-  text-align: left;                 /* left-aligned looks better with the border accent */
+  text-align: left; /* left-aligned looks better with the border accent */
   margin: 0;
   line-height: 1.5;
 }
+/* 
+#main-container {
+  background-color: #000;
+} */
 
 #main-container > *:not(#intro-scene) {
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
+  /* transform: translateY(20px);
   transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
+    opacity 0.6s ease, */
+  transform: none;
 }
 
 #main-container > *.revealed {
   opacity: 1;
   transform: translateY(0);
+}
+
+.chapter-scene {
+  width: 100%;
+  background: #000;
+}
+
+/* eyebrow sits above the GIF on black background */
+.chapter-header-block {
+  background: #000 !important;
+  padding: 4rem 2rem 1.5rem;
+  text-align: center;
+}
+
+.chapter-eyebrow {
+  color: #aaa;
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* GIF wrapper needs relative positioning for the overlay */
+.chapter-scene .g-photo-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100% !important;
+  margin: 0;
+}
+
+.chapter-scene .g-photo-wrapper img {
+  width: 100%;
+  display: block;
+  max-height: 70vh;
+  object-fit: cover;
+}
+
+/* dark gradient behind the title so it's readable */
+.chapter-scene .g-photo-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.15) 70%,
+    transparent 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* title overlaid on the GIF, anchored to bottom */
+.chapter-title-overlay {
+  position: absolute;
+  bottom: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  z-index: 2;
+}
+
+.chapter-title-overlay h2 {
+  color: white;
+  font-family: Georgia, serif;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* embed wrapper reset — no longer needs special positioning */
+.chapter-scene .embed-wrapper {
+  position: relative;
+  width: 100%;
+  background: transparent;
+}
+
+.chapter-scene .embed-wrapper::before {
+  display: none;
 }
