@@ -1,31 +1,12 @@
-/* use this sheet to add your own custom styles */
-
-/* #intro-headline {
-  position: absolute;
-  top: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 900px;
-  z-index: 3;
-  text-align: center;
-} */
-
-#intro-headline h1 {
-  color: white;
-  font-family: Georgia, serif;
-  font-size: clamp(1.4rem, 3.5vw, 2.6rem);
-  line-height: 1.2;
-  margin: 0;
-}
-
+/* ── INTRO HEADLINE ── */
 #intro-headline-block {
   background: #000;
-  padding: 4rem 2rem 2rem;
+  padding: 2rem 2rem 2rem;
   text-align: center;
 }
 
-#intro-headline-block h1 {
+#intro-headline-block h1,
+#intro-headline h1 {
   color: white;
   font-family: Georgia, serif;
   font-size: clamp(1.4rem, 3.5vw, 2.6rem);
@@ -34,6 +15,20 @@
   margin: 0 auto;
 }
 
+#intro-headline .bylines {
+  color: #888;
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+  margin-top: 1rem;
+  text-align: center;
+  display: block;
+}
+
+#intro-headline .g-by {
+  color: #888;
+}
+
+/* ── PARALLAX INTRO SCENE ── */
 #intro-scene {
   position: relative;
   height: 300vh;
@@ -50,46 +45,6 @@
   overflow: hidden;
 }
 
-body {
-  color: white;
-  background-color: #000000;
-  font-family: Georgia, serif;
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  color: #f0f0f0;
-}
-
-p {
-    color: #ddd7d7;
-}
-
-.headline {
-  font-size: 9rem;
-  line-height: 1.2;
-  max-width: 100%;
-}
-
-.subhead,
-.text {
-  color: white;
-  max-width: 680px;
-  margin: 0 auto;
-  line-height: 1.8;
-}
-
-.photo-block {
-  max-width: 1200px;
-  margin: 2rem auto;
-}
-
-.photo-block img {
-  width: 100%;
-  display: block;
-}
-
 #trapped-gif-wrapper {
   position: absolute;
   top: 50%;
@@ -103,6 +58,8 @@ p {
 #trapped-gif {
   width: 100%;
   height: auto;
+  max-height: 90vh;
+  object-fit: contain;
   opacity: 0;
   transition: opacity 1s ease;
   display: block;
@@ -119,21 +76,13 @@ p {
 
 #black-room-quote {
   position: absolute;
-  top: 50%; /* same vertical center as the GIF */
+  top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(60px);
   opacity: 0;
-  transition:
-    opacity 0.8s ease,
-    transform 0.8s ease;
-  z-index: 2; /* sits on top of the GIF which is z-index 1 */
-
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.55
-  ); /* darker box so text is readable over gif */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.55);
   border-left: 3px solid white;
   padding: 1.2rem 1.8rem;
   max-width: 580px;
@@ -145,20 +94,30 @@ p {
   font-family: Georgia, serif;
   font-size: clamp(1.1rem, 2.5vw, 1.7rem);
   font-style: italic;
-  text-align: left; /* left-aligned looks better with the border accent */
+  text-align: left;
   margin: 0;
   line-height: 1.5;
 }
-/* 
-#main-container {
+
+/* ── BASE STYLES ── */
+body {
+  color: white;
   background-color: #000;
-} */
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #f0f0f0;
+}
+
+p {
+  color: #ddd7d7;
+}
 
 #main-container > *:not(#intro-scene) {
   opacity: 1;
-  /* transform: translateY(20px);
-  transition:
-    opacity 0.6s ease, */
   transform: none;
 }
 
@@ -167,12 +126,26 @@ p {
   transform: translateY(0);
 }
 
+/* ── ARTICLE BODY GIFS ── */
+/* this is the default for all photo wrappers outside chapter scenes */
+.g-photo-wrapper {
+  margin: 2rem auto;
+  max-width: 700px;     /* smaller on wide screens */
+}
+
+.g-photo-wrapper img {
+  width: 100%;
+  display: block;
+  max-height: 55vh;     /* smaller height */
+  object-fit: contain;
+}
+
+/* ── CHAPTER SCENES ── */
 .chapter-scene {
   width: 100%;
   background: #000;
 }
 
-/* eyebrow sits above the GIF on black background */
 .chapter-header-block {
   background: #000 !important;
   padding: 4rem 2rem 1.5rem;
@@ -188,43 +161,41 @@ p {
   margin: 0;
 }
 
-/* GIF wrapper needs relative positioning for the overlay */
+/* chapter scene overrides the default g-photo-wrapper */
 .chapter-scene .g-photo-wrapper {
   position: relative;
   width: 100%;
-  max-width: 100% !important;
-  margin: 0;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .chapter-scene .g-photo-wrapper img {
   width: 100%;
   display: block;
-  max-height: 70vh;
-  object-fit: cover;
+  max-height: 450px;     /* was 70vh, now smaller */
+  object-fit: contain;
 }
 
-/* dark gradient behind the title so it's readable */
+/* gradient overlay on chapter GIFs */
 .chapter-scene .g-photo-wrapper::before {
   content: "";
   position: absolute;
   inset: 0;
   background: radial-gradient(
-    to top,
-    rgba(0, 0, 0, 0.55) 0%,
-    rgba(0, 0, 0, 0.15) 70%,
+    ellipse at center,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.1) 70%,
     transparent 100%
   );
   z-index: 1;
   pointer-events: none;
 }
 
-/* title overlaid on the GIF, anchored to bottom */
 .chapter-title-overlay {
   position: absolute;
-  bottom: 2rem;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
   width: 90%;
   max-width: 700px;
   text-align: center;
@@ -239,7 +210,6 @@ p {
   margin: 0;
 }
 
-/* embed wrapper reset — no longer needs special positioning */
 .chapter-scene .embed-wrapper {
   position: relative;
   width: 100%;

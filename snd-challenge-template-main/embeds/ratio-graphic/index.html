@@ -137,33 +137,22 @@
   const BLACK = 2; // 182 Black students ≈ 2 figures at this scale
   const GIF_SRC = "../../images/Walking in Dark.GIF";
 
+  const blackPositions = new Set([24, 165]);
+
   const grid = document.getElementById("ratio-grid");
   const label = document.getElementById("ratio-label");
   const footnote = document.getElementById("ratio-footnote");
 
-  // build units array, mark last BLACK entries as black students
-  const units = Array.from({ length: TOTAL }, (_, i) => ({
-    index: i,
-    isBlack: i >= TOTAL - BLACK,
-  }));
-
-  // shuffle so Black figures land randomly in the grid
-  for (let i = units.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [units[i], units[j]] = [units[j], units[i]];
-  }
-
-  units.forEach((unit) => {
+  for (let i = 0; i < TOTAL; i++) {
     const div = document.createElement("div");
-    div.className = "student-unit" + (unit.isBlack ? " black-student" : "");
-
+    const isBlack = blackPositions.has(i);
+    div.className = "student-unit" + (isBlack ? " black-student" : "");
     const img = document.createElement("img");
     img.src = GIF_SRC;
     img.alt = "";
-
     div.appendChild(img);
     grid.appendChild(div);
-  });
+  }
 
   const allUnits = document.querySelectorAll(".student-unit");
   const section = document.getElementById("ratio-section");

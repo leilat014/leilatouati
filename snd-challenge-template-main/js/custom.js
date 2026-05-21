@@ -42,6 +42,7 @@ function buildIntroScene() {
   const quote = document.getElementById("black-room-quote");
   const headline = document.getElementById("headline-wrapper");
   const container = document.getElementById("main-container");
+  const bylines = document.getElementById(".bylines");
 
   // find the ratio embed — parallax goes after this
   const allEmbeds = document.querySelectorAll(".embed-wrapper");
@@ -66,6 +67,8 @@ function buildIntroScene() {
     headlineClone.id = "intro-headline";
     headlineBlock.appendChild(headlineClone);
   }
+
+  if (headline) headline.style.display = "none";
 
   container.insertBefore(headlineBlock, container.firstChild);
 
@@ -254,49 +257,3 @@ function wrapChapterHeaders() {
     });
   }, 200); // check every 200ms
 }
-// function wrapChapterHeaders() {
-//   const chapterTitles = {
-//     "chapter-first-steps": "The first steps on campus",
-//     "chapter-home": "Home, not-so-sweet, home",
-//     "chapter-bias": "Encounters with bias and discrimination",
-//     "chapter-rep": "Seeking representation",
-//     "chapter-action": "Performative action and deaf ears",
-//     "chapter-sanctuary": "A sanctuary in cultural clubs",
-//     "chapter-light": "Finding the light"
-//   };
-
-//   const embeds = document.querySelectorAll(".embed-wrapper");
-
-//   embeds.forEach((embed) => {
-//     const header = embed.querySelector(".chapter-header-block");
-//     if (!header) return;
-
-//     const nextEl = embed.nextElementSibling;
-//     if (!nextEl || !nextEl.classList.contains("g-photo-wrapper")) return;
-
-//     // create scene wrapper
-//     const chapterScene = document.createElement("div");
-//     chapterScene.className = "chapter-scene";
-
-//     // move anchor ID to the scene wrapper
-//     const anchorId = header.id;
-//     if (anchorId) {
-//       chapterScene.id = anchorId;
-//       header.removeAttribute("id");
-//     }
-
-//     // create the title overlay element
-//     const titleOverlay = document.createElement("div");
-//     titleOverlay.className = "chapter-title-overlay";
-//     const titleText = chapterTitles[anchorId] || "";
-//     titleOverlay.innerHTML = `<h2>${titleText}</h2>`;
-
-//     // inject title overlay INTO the gif wrapper
-//     nextEl.style.position = "relative";
-//     nextEl.appendChild(titleOverlay);
-
-//     embed.parentNode.insertBefore(chapterScene, embed);
-//     chapterScene.appendChild(embed);
-//     chapterScene.appendChild(nextEl);
-//   });
-// }

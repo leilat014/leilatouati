@@ -6,10 +6,10 @@
     "credit": ""
   },
   {
-    "type": "university",
-    "content": "California Polytechnic State University",
-    "max_size": "body",
-    "credit": "cp_logo.jpeg"
+    "type": "bylines",
+    "content": "By: Carly Heltzel, Grace Gillio, Archana Pisupati, Leila Touati",
+    "max_size": "450",
+    "credit": ""
   },
   {
     "type": "embed",
@@ -28,12 +28,6 @@
     "content": "Trapped in Dark Room.GIF",
     "max_size": "1200",
     "credit": "Graphic by Anika Loganathan"
-  },
-  {
-    "type": "bylines",
-    "content": "By: Carly Heltzel, Grace Gillio, Archana Pisupati, Leila Touati",
-    "max_size": "450",
-    "credit": ""
   },
   {
     "type": "text",
@@ -102,7 +96,7 @@
     "credit": ""
   },
   {
-    "type": "subheading",
+    "type": "subhead",
     "content": "\nKyleigh Spight\n",
     "max_size": "body",
     "credit": ""
@@ -120,7 +114,7 @@
     "credit": ""
   },
   {
-    "type": "subheading",
+    "type": "subhead",
     "content": "\nMarisol Mata Alonzo\n",
     "max_size": "body",
     "credit": ""
@@ -137,7 +131,60 @@
     "max_size": "body",
     "credit": ""
   },
-  
+  {
+    "type": "subhead",
+    "content": "\nTri-An Pham\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nTri-An Pham said she felt privileged to avoid spaces with less diversity on campus.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“I made like a really big effort almost to find the familiarity in this very like unfamiliar place that I was very privileged to not really notice it because I made such an effort trying to find it and like was able to find that.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nOriginally from the Bay Area, she said coming to Cal Poly meant being separated from her community. It felt like a movie in the sense that the overall image of going to the beach in between classes and tanning on the lawn is like “the colleges you see in movies, and like obviously a lot of those are centered around like white characters, white people.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "subhead",
+    "content": "\nDylan Tran\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nDylan Tran hesitated about attending Cal Poly, coming from the more diverse San Diego.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“I definitely did feel a culture shock like coming here just not being like exposed to the same kind of foods and all the kind of things.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "subhead",
+    "content": "\nIzzy Pérez\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nIzzy Pérez decided to attend Cal Poly due to financial aid after becoming homeless his senior year of high school. He described being initially “resentful” of his choice, but later finding comfort in joining student organizations like BSU.\n",
+    "max_size": "body",
+    "credit": ""
+  },
 
   {
     "type": "embed",
@@ -171,7 +218,61 @@
   },
   {
     "type": "text",
-    "content": "\nDespite making strides on campus to establish communities for Black students, Maya said she still hesitates about her decision to come to Cal Poly.\n\n\u201cIf they had given me any more money, I would\u2019ve gone,\u201d she said about Howard University, a historically Black university in Washington, D.C.",
+    "content": "\nDespite making strides on campus to establish communities for Black students, Maya said she still hesitates about her decision to come to Cal Poly. \n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“You're trying to attract people from out of state that can't even begin to imagine affording the cost of out-of-state tuition,” she said. “Understanding the group that you're catering to and understanding what it is they're looking for, SLO doesn’t really have that to offer young Black students.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nGlover said there is no effort from the administration to support students who are looking to build social and professional connections to create a world they want to stay in.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“If I graduate, I have no intentions of staying in San Luis Obispo. There’s nothing about this city that interests me in the headspace of being a professional Black woman,” Glover said.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nSimilarly, Izzy Pérez, vice president of BSU, said he considered attending other “great schools” such as UC Berkeley, UCLA and Dartmouth, but ultimately chose Cal Poly because it offered the most financial aid and was close to home. \n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nPérez often encounters Black freshmen who are looking to transfer, unsure of continuing their education at Cal Poly.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“I am pushing people to transfer. If you don't feel safe here and you don't think you'll thrive, why would you stay in a space that you don't feel welcomed in?” Pérez said. “I will always fight for you and be in your corner. But then that becomes so draining for me to always have to do that, when the school literally can do that by just addressing these issues, but they don't.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nStudents reported surfacing feelings of resentment upon encountering macroaggressions on campus that made them rethink their decisions to come to Cal Poly.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nThough not all decisions were driven by need, most students shared sentiments of diversity being in the question of staying or leaving.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nChris Finley, a former Cal Poly student, decided to attend Cal Poly over attending a school like Tuskegee due to a fear of failing in an environment where he was surrounded by successful students of color — a feeling he likened to imposter syndrome — a choice he later regretted.\n",
     "max_size": "body",
     "credit": ""
   },
@@ -189,7 +290,229 @@
   },
   {
     "type": "text",
-    "content": "Izzy P\u00e9rez, a political science, Spanish and psychology junior, is the vice president of BSU. Along with his minors in women and gender studies, ethnic studies and law and society, he has become a proxy professor in many of his classes \u2014 but not by choice.\n\nP\u00e9rez is often the only Black voice in the classroom, a fact that\u2019s made more noticeable to him when topics like the Civil Rights movement and Black liberation arise.\n\n\u201cThey immediately look towards the person that is in proximity to Blackness, and they\u2019ll isolate them and be like, \u2018What do you think?\u2019 And that\u2019s what the conversation is,\u201d P\u00e9rez said.",
+    "content": "\nIzzy Pérez, a political science, Spanish and psychology junior, is the vice president of BSU. Along with his minors in women and gender studies, ethnic studies and law and society, he has become a proxy professor in many of his classes — but not by choice.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nPérez is often the only Black voice in the classroom, a fact that’s made more noticeable to him when topics like the Civil Rights movement and Black liberation arise.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“They immediately look towards the person that is in proximity to Blackness, and they'll isolate them and be like, ‘What do you think?’ And that's what the conversation is,” Pérez said.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nThis experience, being the token speaker for a classroom of people who don’t share his lived experience as a Black student, is draining. Especially when the conversation dies down once Pérez stops participating.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“Black students are retracting themselves from curriculum and conversation because they're the only ones talking. They're the ones that have to explain things,” Pérez said.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nAfter a long day of class, a walk home through campus can become the brightest part of a student's day. For Pérez, campus and home offer little comfort. These spaces, which are supposed to feel safe, only become opportunities for encounters with racial aggressions.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nPérez worked as a resident advisor for the first three weeks of this school year. In that time, all while balancing stories of encounters with hate speech from students, a non-Black student called him the n-word.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nAfter this experience, Pérez spoke with his supervisor about the incident. She told him that they are seeing some of the highest rates of hate speech ever in the student dorms. Pérez left his position as a resident advisor soon after.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“Now Black students go through campus with almost a shield,” Pérez said. “They have to have their walls up because they don't even know who they can talk to, because then they'll end up saying the n-word behind their back.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nLiving in the residence halls is often the first instance students live among other people their age.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nDespite being able to request roommates or a particular Residential Living Community, the experience is largely randomized. Residence halls are filled with students of various backgrounds, which some said sometimes comes with ignorance.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nKyleigh Spight, an interdisciplinary studies junior and secretary for BSU, was one of these students who had unwelcome encounters with ignorance and racism while living in the dorms.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nWhile in the yakʔitʸutʸu communal laundry rooms freshman year, Spight was called a racial slur by a girl also doing her laundry. Feeling rattled by this incident, Spight went to talk with her roommates to unpack what had just happened.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nInstead of being met with support, Spight’s roommates quizzed her on the experience, assuring her that she must have misunderstood and that this was simply an overreaction. Because something like that had never happened to her roommates, the situation became Spight’s burden to explain and unpack, and she was left feeling like this was her fault.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nSpight ended up seeing the girl who called her a slur a couple days later and decided to approach the girl and ask for an apology. Rather than apologize, the girl told Spight she was making this all about race.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“And then she took no accountability for what she said or her actions,” Spight said.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nOther times, discrimination comes from the teachers and professors that students come into contact with.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nDuring one of Spight’s freshman year STEM classes, a professor was lecturing the class on professionalism in the career space. While speaking about the importance of keeping hair tidy and ensuring one’s tone is non-vulgar and non-aggressive in the workplace, the professor kept her eyes trained on Spight.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nSpight, consistently one of the only Black students in the room, could not shake the feeling that she was being targeted for her identity. She thought, “What is happening right now?”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nLike the incident in the laundry room, Spight approached her professor after class and told her how uncomfortable the situation had made her feel. Spight’s professor confirmed Spight’s fears — she was targeting her.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nThe professor told Spight that “her people” and “her community” tend to be very unprofessional, while insisting this had nothing to do with Spight being Black.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“It's what you're implying,” Spight said, recalling the incident. “You keep saying my people and my culture. I am an African-American woman. I am a Black woman on this campus. I've been nothing but professional in your class. … I barely speak in your class.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nBoth Spight and Glover have had instances where their identity as Black women on the Cal Poly campus garners unwanted and offensive attention.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nWhile some of the comments made to Glover may be well-intentioned, she feels like their awe is stemming from “not exactly a good place.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“It's comments on my skin color. It's comments on the way that I act, comments on my body inappropriately, comments on my hair, comments on the way that I speak,” Glover said. “It's a pretty common occurrence, I would say. It comes from all over.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nShe defined “common” as small microaggressions once a week and worse incidents occurring once or twice a month.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nPeople have profusely complimented her, calling her “exotic” and obsessing about how pretty she is to the point where it feels like people think Black people are some “crazy cool thing,” “literally foreign,” or “whole separate category of human.” To Glover, she looks like every other Black person she knows.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nPeople also ask her if she speaks any other languages and where she is “really from” after she tells them she lives in Texas.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nHer freshman year, Glover didn’t have an easy way to get downtown to buy Black hair products, and in the campus bookstore’s section of products, not a single one was meant for her hair type.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nThe one time a product she really needed showed up, her feeling of excitement quickly turned to frustration about how she had prepared to expect it when non-Black hair products had “been here since Cal Poly has been here.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nSituations like this, coupled with pervasive stereotypes, force students like Glover and Spight to code-switchhiding their real identity out of fear of conforming to the stereotypes assumed about Black people.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nSpight says constantly being conscious about how she is perceived is an added weight of pressure on her daily life.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“I don’t want anybody to think I'm living up to the stereotype of the angry Black woman,” Spight said. “I need to be professional, I need to be calm. I can’t be on the phone laughing with my mom at something funny and be in the UU and then people are looking at me. I have to reel it in.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nThe only time Spight can let go and relax is in BAEC or her apartment, talking to her mom and her sisters on the phone. But outside of the house, where she feels like eyes are on her constantly, she has to be “composed” and “rigid.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nThis mental pressure—constantly being on high alert, constantly monitoring your words—is taxing for students like Spight and Glover. For Glover, it’s incredibly frustrating and difficult to have to go through the day with these things always at the forefront of her mind.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“I have to sit up extra straight, answer these questions with my biggest words, I can't laugh at this joke, and I can't crack the exact same quick tidbit snippet of a response to something that this person can because they're going to laugh at me, and they're going to be like, ‘Oh, she said that because she's Black and this is what Black people say,’” Glover said.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nGlover knows these questions don’t run through white students’ heads. It’s unfair, she said, that she has to deal with this added weight because of something that is 100% out of her control — the way she looks.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nOften, the classroom environment is where this pressure is felt most intensely. When Harris is walking around campus, she often feels like “any other student.” But when she is in the classroom, she can’t help but feel like her peers are surprised by her intelligence. She says this is “implicit,” but still felt.\n",
     "max_size": "body",
     "credit": ""
   },
@@ -207,7 +530,37 @@
   },
   {
     "type": "text",
-    "content": "Students like P\u00e9rez and Harris said they miss seeing other students of color around campus beyond their BSU meetings. They do not see professors of color in their departments.\n\n\u201cThe most diverse sector of Cal Poly is their laborers,\u201d P\u00e9rez said. \u201cThe people that are in charge of cleaning, the people that are in charge of 1901, the people in charge of dining, all that stuff is the most diverse thing.\u201d\n\nThese sentiments aren\u2019t new. Over 30 years ago, when Jessica Dunlap, a 1993 graduate, attended Cal Poly, she didn\u2019t see herself in the professors she had.",
+    "content": "\nStudents like Pérez and Harris said they miss seeing other students of color around campus beyond their BSU meetings. They do not see professors of color in their departments.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“The most diverse sector of Cal Poly is their laborers,” Pérez said. “The people that are in charge of cleaning, the people that are in charge of 1901, the people in charge of dining, all that stuff is the most diverse thing.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nThese sentiments aren’t new. Over 30 years ago, when Jessica Dunlap, a 1993 graduate, attended Cal Poly, she didn’t see herself in the professors she had. Dunlap said seeing people who “look like them as a professor opens up possibility,” yet she never saw that for herself.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“I didn’t have any professors that looked like me, actually,” she said.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nSeeing diverse representation in the leaders of Cal Poly can bring in more prospective students of color to the university, according to Jeremiah Hernandez, the coordinator for Latinx/e Center for Academic Success and Achievement (La CASA). Yet, he said he keeps it honest when describing the diversity at Cal Poly.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“One of my taglines when I talk to students that are visiting campus, is that I probably don’t look like your typical Cal Poly employee that you would expect, and you get head nods and things like that, but that’s very much to break down that barrier and let them know,” Hernandez said.\n",
     "max_size": "body",
     "credit": ""
   },
@@ -225,7 +578,229 @@
   },
   {
     "type": "text",
-    "content": "At centers like the BAEC and La CASA, mentors of color lead conversations about the lack of a sense of belonging on campus.\n\nBlack students have told Lampley, the BAEC coordinator, they are tired of Cal Poly\u2019s administration\u2019s actions feeling performative.\n\nLampley compared it to Cal Poly showing off its Black students like trophies.\n\n\u201cWhen the lights and the crowd\u2019s not facing Cal Poly with the trophy, the trophy gets put back on the shelf,\u201d Lampley said. \u201cAnd that\u2019s how some of the Black students feel.\u201d",
+    "content": "\nAt centers like the Black Academic Excellence Center, or BAEC, and Latinx/e Center for Academic Success and Achievement, also known as La CASA, mentors of color lead conversations about the lack of a sense of belonging on campus.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nBlack students have told Lampley, the BAEC coordinator, they are tired of Cal Poly’s administration’s actions feeling performative.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nSome expressed they’re weary of Cal Poly putting them at the forefront to demonstrate its diversity, as it feels like they are being tokenized — the result of putting symbolic effort toward including people of color rather than achieving real, equitable inclusion.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nLampley compared it to Cal Poly showing off its Black students like trophies.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“When the lights and the crowd's not facing Cal Poly with the trophy, the trophy gets put back on the shelf,” Lampley said. “And that's how some of the Black students feel.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nGenuine support from Cal Poly looks like time and consistency, Lampley added: Administration spending time listening and dedicating resources to students of color and maintaining this communication and support, even when it’s not as convenient.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nRight now, he doesn’t know if it is meeting those standards.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nGlover described examples of superficial support from Cal Poly as holding events for students of color in the extremely visible places on campus and putting up smiling pictures of Black students around campus on Cal Poly-branded posters. Glover wishes the university would provide more private space to have conversations about Blackness at Cal Poly, instead of spotlighting every event, no matter how small.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nHernandez, who has helped put on several La CASA events for Hispanic students in the UU, said while he sees how the prominence of these activities appears performative to certain students, this has to be balanced with visibility and accessibility for those students he’s serving.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nEven though several interviewees said they were invited to have conversations with administrators about how to improve things, ultimately, Glover said she thinks the people in power haven’t acted on those concerns to make the changes needed.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“It's mainly just disappointing,” she said. “You can try to get them to change their mind, but at the end of the day, it takes replacing those people with people that actually genuinely care about you.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nEmployees at Cal Poly have to prioritize equity and support for underrepresented students, or it will slip through the cracks, Glover said.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nOther times, students and staff of color aren’t consulted at all.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nStudents at the BAEC felt blindsided by the university announcing it was moving the center’s office across campus. Cal Poly moved the BAEC from Building 52, near the University Union, to Building 15, the old Cal Poly Partners building across from the College of Liberal Arts Faculty Offices.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nThe new location is a far walk out of the way for most students and, notably, further from the freshman residence halls, Spight said. Now, it’s harder for Black students and freshmen to get support or stumble upon the center, and every visit must be intentional, she said.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nTo Spight, it feels like Cal Poly moved the BAEC “further from the center and the heart of campus.” She called it a “trek” to get there, an “out of sight, out of mind” location and said many students think it’s “not worth it to walk all the way.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nLast year, students and staff at the center, who said they were not consulted before Cal Poly made the decision to move the center, predicted that it would be detrimental to the center’s activity level. This year, they’ve seen their predictions come true.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“It's been proven, we don't have as much foot traffic anymore,” Spight said. “People don't really come into BAEC anymore.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nPoly Cultural Weekend, Open House and Culture Fest, some of the largest events for cultural clubs throughout the year, were “so frustrating” for club presidents to be a part of, according to Pham, the former Vietnamese Student Association president.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nShe said there was a consensus among presidents that their student perspective was not listened to “at all” when trying to implement new ideas or solve problems.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“It is very, very taxing and, talking to other people, it feels like you have the weight of diversity on your shoulders,” Pham said of being a cultural club president.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nCultural club presidents, she said, have to “carry the burden of creating a home for other students,” knowing that these clubs are one of the few ways for students of color to feel a sense of belonging at Cal Poly.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nMeanwhile, during those events, administration would send a photographer over to get photos “like they don't like care about anything else,” Pham said.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nHarris and Pérez said they have advocated for a residence hall floor dedicated to Black freshmen, which used to exist. Pérez, who was a resident advisor at the beginning of this year, volunteered to be the advisor of a Black scholars floor to provide a space for Black students to find each other from the start.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nAt a BSU cookout at the beginning of the year, some freshmen told Harris and Pérez that they didn’t have other Black students in their residence halls or didn’t like their roommates, which frustrated Harris and Pérez because the university could have had a designated floor.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“It once again felt like they were splitting us off as we just got there,” Harris said.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nPérez ended up being a resident advisor for the multicultural floor, which was half white and only had two Black students on it. When he did his rounds checking on the rooms, he would often see Black students gathered together anyway.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“We have to find each other because there's no other way we can feel comfortable because we'll go into our building and then our neighbors are saying the n-word partying,” Pérez said.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nIn this case, the responsibility lies on students to create a safe space, Pérez said, rather than administration carving it out for them.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“It feels like we’re a pilot program in a school that’s been here for decades,” Pérez said.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nInitiatives to support Black students must be pushed through by Black students who are trying to make a place for themselves on campus, Pérez said.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nOne student who was able to make positive change is Marisol Mata, a plant science senior who chaired the Cross Cultural Experience for the Orientation Leadership Team for two years.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nMata implemented a Spanish translation track for the SLO Days summer orientation program so that parents and supporters who don’t speak English could receive the same resources as the ones who do. The orientation staff had already been thinking about adding the track, and Mata jumped on the project to bring it to fruition.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nWhen she was an incoming freshman, she experienced the lack of resources for Spanish-speaking supporters.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“My mom didn't come because I didn't want her to get lost,” Mata said. “It was just going to be my mom and myself, and I didn't bring her.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nShe knows other students who had the same experience, and she said this program is a crucial step to putting weight behind Cal Poly’s goal to become a Hispanic serving institution.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nLampley said it’s all about giving back and doing the work for students of color so their relationship with the university doesn’t feel exploitative.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“It's like when you pour out the Brita filter,” Lampley said. “When you get a drink of water, you don't want to just put back the Brita filter. Like no, use it and just refill the water up and then put it back.”\n",
     "max_size": "body",
     "credit": ""
   },
@@ -243,7 +818,61 @@
   },
   {
     "type": "text",
-    "content": "Harris is always in a figurative dark room when she steps on campus at Cal Poly. The micro-aggressions, prejudice and roadblocks she faces are blocking her from finding a light switch.\n\nBut when Harris walks into a Black Student Union meeting, she said she\u2019s still in that room, but this time there are disco lights, music, food and most importantly: other people.\n\n\u201cEven though I\u2019m on that island by myself, I get to be surrounded by people who are also on islands by themselves,\u201d Harris said. \u201cBut we all kind of celebrate.\u201d",
+    "content": "\nHarris is always in a figurative dark room when she steps on campus at Cal Poly. The micro-aggressions, prejudice and roadblocks she faces are blocking her from finding a light switch.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nBut when Harris walks into a Black Student Union meeting, she said she’s still in that room, but this time there are disco lights, music, food and most importantly: other people.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nHer dark room turns into a party where she can be authentic with no fear of judgment.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“Even though I'm on that island by myself, I get to be surrounded by people who are also on islands by themselves,” Harris said. “But we all kind of celebrate.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nMata said these clubs and organizations helped her branch out and become a more outgoing version of herself, allowing her to thrive in college.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nAside from orientation, Mata is the president of Latinos in Agriculture, which she called her “home away from home.” Her freshman year, La CASA was her number one study spot.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nThe first time Mata ever approached the Latinos in Agriculture club, one of the members asked what her name was.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“For some reason, that was like, ‘Oh my god, they want to know me. They want to know who I am,’” she said. “And that just stuck with me.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nFor Tran, his involvement in the Multi-racial Student Association (MUSA) helped provide an inclusive space in a campus that he originally found “unfamiliar.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“[MUSA] helped me so much navigating how I feel about my identity and how I choose to identify myself,” he said. “I think one of the most interesting discussions that I found from that was like identifying as mixed rather than like both races as being like Asian or white. Just identify as just straight mixed. I think that was a super powerful point for me.”\n",
     "max_size": "body",
     "credit": ""
   },
@@ -261,7 +890,61 @@
   },
   {
     "type": "text",
-    "content": "Jeremiah Hernandez, coordinator for the Latinx/e Center for Academic Success and Achievement (La CASA), has heard these stories before. Harris described what it\u2019s like to navigate Cal Poly living in a dark room. Hernandez has spent years trying to help students find the light switch.\n\n\u201cThe burden of change and progression is often left on the shoulders of the oppressed,\u201d Hernandez said. \u201cWe, the ones that are going through the struggles, are the ones that have to initiate and push for change.\u201d\n\nHe never planned on working in higher education. He just wanted to help people the way others helped him.",
+    "content": "\nJeremiah Hernandez, coordinator for La CASA, has heard these stories before. Harris described what it’s like to navigate Cal Poly living in a dark room. Hernandez has spent years trying to help students find the light switch.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“You know, you could use your imagination in the best and the worst ways,” Hernandez said about the nature of challenges his students present him with. “The burden of change and progression is often left on the shoulders of the oppressed, right? That we, the ones that are going through the struggles, are the ones that have to initiate and push for change.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nHernandez said he holds a big belief that privilege is not about the things you get to have; it’s about the challenges and adversities that you do not have to deal with.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nHe never planned on working in higher education. He just wanted to help people the way others helped him. As a community college student, he worked with students in the Educational Opportunity Program and TRIO programs. Originally from Santa Maria, Hernandez recounted moments throughout his life where he was victim to microaggressions and subtle racism.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“It was never really a big deal to me,” he said. When he experienced forms of racism at Cal Poly, he said he felt enlightened because it was different from what he would experience at home — they were “oh, wow” moments.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“Things like this really do happen out in the real world, right?” he asked.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nAfter transferring to Cal Poly and graduating with a degree in ethnic studies in 2018, he returned to campus as a mentor. Now, as La CASA’s director, Hernandez said his role is about more than programming. It’s about providing a space for students where, even in the darkest corners of campus, there’s light.\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“I am here to support students first and foremost,” Hernandez said. “Repping for the little ones, the big homie gotcha.”\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\nFinley still speaks to Cal Poly students, serving on the Dean’s Leadership Council of the Bailey College of Science and Math. Most recently, he visited campus to speak to BSU students. Like other students, Finley treated his experience with Cal Poly as a platform to be the change. This act of resistance, which turned over his burden of expectation, is captured in his final declaration:\n",
+    "max_size": "body",
+    "credit": ""
+  },
+  {
+    "type": "text",
+    "content": "\n“Defining the ultimate reality. In the beginning, there was first dark, even before Noah's great ark. Out of the darkness comes a light. It will take years to make things right. Injustice and brutality, just to name a few. It will take more than a dream to make it come true. Remember the past and what it is taught. We are the children in which for rights they fought. If they were here, every day. This is what they probably say. Create, innovate, my brothers and sisters. Our past cries hidden deep down aside, unaffected by the lies. Children of a people so advanced and supreme, of their wisdom and knowledge we can only dream. He who controls the past controls destiny we are taught. It is for these things that our ancestors gallantly fought. Although it seems at times that others have won the fight, nothing's over really. Until youth left sight. It's not about Black, it's what Black is about. I'm not a minority. There's nothing minor about me.”\n",
     "max_size": "body",
     "credit": ""
   }
