@@ -80,23 +80,34 @@
   left: 50%;
   transform: translateX(-50%) translateY(60px);
   opacity: 0;
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: transparent;
+  border-left: none;
+  padding: 0;
+  max-width: 700px;
+  width: 90%;
+  text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.55);
   border-left: 3px solid white;
   padding: 1.2rem 1.8rem;
   max-width: 580px;
-  width: 90%;
+  width: 90%; */
 }
 
 #black-room-quote p {
   color: white;
   font-family: Georgia, serif;
-  font-size: clamp(1.1rem, 2.5vw, 1.7rem);
+  font-size: clamp(1.2rem, 3vw, 2rem);
   font-style: italic;
-  text-align: left;
+  font-weight: 700;
+  text-align: center;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.8); /* shadow so it reads over the gif */
 }
 
 /* ── BASE STYLES ── */
@@ -130,13 +141,13 @@ p {
 /* this is the default for all photo wrappers outside chapter scenes */
 .g-photo-wrapper {
   margin: 2rem auto;
-  max-width: 700px;     /* smaller on wide screens */
+  max-width: 700px; /* smaller on wide screens */
 }
 
 .g-photo-wrapper img {
   width: 100%;
   display: block;
-  max-height: 55vh;     /* smaller height */
+  max-height: 55vh; /* smaller height */
   object-fit: contain;
 }
 
@@ -172,7 +183,7 @@ p {
 .chapter-scene .g-photo-wrapper img {
   width: 100%;
   display: block;
-  max-height: 450px;     /* was 70vh, now smaller */
+  max-height: 450px; /* was 70vh, now smaller */
   object-fit: contain;
 }
 
