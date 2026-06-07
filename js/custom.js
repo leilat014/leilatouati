@@ -16,8 +16,79 @@ function waitForContent() {
     buildIntroScene();
     initScrollMagic();
     wrapChapterHeaders();
+    initVideoAutoplay();
   }, 100);
 }
+
+function initVideoAutoplay() {
+  const videos = document.querySelectorAll('.g-video-wrapper video');
+
+  const observer = new IntersectionObserver ((entries) => {
+    entries.forEach(entry => {
+      const video = entry.target;
+      if (entry.isIntersecting) {
+        // video.muted = true;
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+  }, { threshold: 0.5 });
+
+  videos.forEach(video => {
+    video.muted = false;
+    video.loop = false;
+    video.controls = true;
+    observer.observe(video);
+  }
+  );
+}
+
+// function wrapTextVideoSections() {
+//   const container = document.getElementById('main-container');
+//   const children = Array.from(container.children);
+
+//   children.forEach(child => {
+//     if (!child.classList.contains('g-video-wrapper')) return;
+
+//     const prevEl = child.previousElementSibling;
+//     if (!prevEl || !prevEl.classList.contains('body-size')) return;
+
+//     // collect all consecutive body-size siblings before this video
+//     // so the sticky video sits beside multiple paragraphs
+//     const textBlocks = [];
+//     let cursor = prevEl;
+//     while (cursor && cursor.classList.contains('body-size')) {
+//       textBlocks.unshift(cursor);
+//       cursor = cursor.previousElementSibling;
+//     }
+
+//     // only pair if there are text blocks
+//     if (textBlocks.length === 0) return;
+
+//     const pair = document.createElement('div');
+//     pair.className = 'text-video-pair';
+
+//     const textCol = document.createElement('div');
+//     textCol.className = 'text-col';
+
+//     const videoCol = document.createElement('div');
+//     videoCol.className = 'video-col';
+
+//     // insert wrapper before the first text block
+//     container.insertBefore(pair, textBlocks[0]);
+
+//     // move text blocks into text column
+//     textBlocks.forEach(block => textCol.appendChild(block));
+
+//     // move video into video column
+//     videoCol.appendChild(child);
+
+//     pair.appendChild(textCol);
+//     pair.appendChild(videoCol);
+//   });
+// }
+
 
 function tagElements(allPhotos, allTextDivs) {
   if (allPhotos[0]) {
@@ -104,43 +175,6 @@ function buildIntroScene() {
 
   const universityEl = document.querySelector(".university");
   if (universityEl) universityEl.style.display = "none";
-
-  //   console.log("container children after:", container.children.length);
-  //   console.log(
-  //     "all children after:",
-  //     Array.from(container.children).map((el) => el.id || el.className),
-  //   );
-  //   const gif = document.getElementById("trapped-gif-wrapper");
-  //   const quote = document.getElementById("black-room-quote");
-  //   const container = document.getElementById("main-container");
-
-  //   if (!gif) { console.error("trapped-gif-wrapper not found"); return; }
-  //   if (!quote) { console.error("black-room-quote not found"); return; }
-
-  //   const introScene = document.createElement("div");
-  //   introScene.id = "intro-scene";
-
-  //   const introSticky = document.createElement("div");
-  //   introSticky.id = "intro-sticky";
-
-  //   // clone both elements so originals stay in the article flow
-  //   const gifClone = gif.cloneNode(true);
-  //   const quoteClone = quote.cloneNode(true);
-
-  //   gifClone.id = "trapped-gif-wrapper";
-  //   gifClone.querySelector("img").id = "trapped-gif";
-  //   quoteClone.id = "black-room-quote";
-
-  //   introSticky.appendChild(gifClone);
-  //   introSticky.appendChild(quoteClone);
-  //   introScene.appendChild(introSticky);
-
-  //   // insert intro scene at the very top
-  //   container.insertBefore(introScene, container.firstChild);
-
-  //   // hide originals so they don't appear twice in the article
-  //   gif.style.display = "none";
-  //   quote.style.display = "none";
 }
 
 function initScrollMagic() {

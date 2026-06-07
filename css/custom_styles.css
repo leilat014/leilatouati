@@ -230,3 +230,47 @@ p {
 .chapter-scene .embed-wrapper::before {
   display: none;
 }
+
+/* .text-video-pair {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+.text-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.text-col .body-size {
+  max-width: none;
+  margin: 0 0 1.2rem 0;
+}
+
+.video-col {
+  flex-shrink: 0;
+  width: 340px;
+  position: sticky;
+  top: 5rem;
+  align-self: flex-start;
+}
+
+.video-col video {
+  width: 100%;
+  display: block;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .text-video-pair {
+    flex-direction: column;
+  }
+
+  .video-col {
+    position: relative; /* disable sticky on mobile */
+    /* top: auto;
+    width: 100%;
+  } */
