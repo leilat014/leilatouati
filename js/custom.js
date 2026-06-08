@@ -21,27 +21,29 @@ function waitForContent() {
 }
 
 function initVideoAutoplay() {
-  const videos = document.querySelectorAll('.g-video-wrapper video');
+  const videos = document.querySelectorAll(".g-video-wrapper video");
 
-  const observer = new IntersectionObserver ((entries) => {
-    entries.forEach(entry => {
-      const video = entry.target;
-      if (entry.isIntersecting) {
-        // video.muted = true;
-        video.play();
-      } else {
-        video.pause();
-      }
-    });
-  }, { threshold: 0.5 });
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          // video.muted = true;
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+    },
+    { threshold: 0.5 },
+  );
 
-  videos.forEach(video => {
+  videos.forEach((video) => {
     video.muted = false;
     video.loop = false;
     video.controls = true;
     observer.observe(video);
-  }
-  );
+  });
 }
 
 // function wrapTextVideoSections() {
@@ -89,7 +91,6 @@ function initVideoAutoplay() {
 //   });
 // }
 
-
 function tagElements(allPhotos, allTextDivs) {
   if (allPhotos[0]) {
     allPhotos[0].id = "trapped-gif-wrapper";
@@ -102,6 +103,9 @@ function tagElements(allPhotos, allTextDivs) {
     if (p && p.textContent.includes("Picture a black room")) {
       div.id = "black-room-quote";
     }
+    if (p && p.textContent.includes("This is how Jaylyn Harris")) {
+      div.id = "jaylyn-intro";
+    }
   });
 
   const headlineWrapper = document.querySelector(".headline-wrapper");
@@ -112,6 +116,7 @@ function buildIntroScene() {
   const gif = document.getElementById("trapped-gif-wrapper");
   const quote = document.getElementById("black-room-quote");
   const headline = document.getElementById("headline-wrapper");
+  const jaylynIntro = document.getElementById("jaylyn-intro");
   const container = document.getElementById("main-container");
   const bylines = document.getElementById(".bylines");
 
@@ -157,8 +162,14 @@ function buildIntroScene() {
   gifClone.querySelector("img").id = "trapped-gif";
   quoteClone.id = "black-room-quote";
 
+  const jaylynClone = jaylynIntro ? jaylynIntro.cloneNode(true) : null;
+  if (jaylynClone) {
+    jaylynClone.id = "jaylyn-intro-overlay";
+  }
+
   introSticky.appendChild(gifClone);
   introSticky.appendChild(quoteClone);
+  if (jaylynClone) introSticky.appendChild(jaylynClone);
   introScene.appendChild(introSticky);
 
   // insert parallax scene after the ratio graphic
@@ -171,6 +182,7 @@ function buildIntroScene() {
   // hide all originals
   gif.style.display = "none";
   quote.style.display = "none";
+  if (jaylynIntro) jaylynIntro.style.display = "none";
   if (headline) headline.style.display = "none";
 
   const universityEl = document.querySelector(".university");
@@ -184,8 +196,8 @@ function initScrollMagic() {
   new ScrollMagic.Scene({
     triggerElement: "#intro-scene",
     triggerHook: 0,
-    offset: 100,
-    duration: "60%",
+    offset: 50,
+    duration: "30%", // GIF disappears halfway through the scene
   })
     .on("enter", () => {
       document.getElementById("trapped-gif").style.opacity = "1";
@@ -195,44 +207,41 @@ function initScrollMagic() {
     })
     .addTo(controller);
 
-  // Scene 2: slide up the quote
+  // Scene 2: fade in the quote — happens immediately on scroll
   new ScrollMagic.Scene({
     triggerElement: "#intro-scene",
     triggerHook: 0,
-    offset: 500,
-    duration: "65%",
+    offset: 100,
+    duration: "70%",
   })
     .on("enter", () => {
       const quote = document.getElementById("black-room-quote");
       quote.style.opacity = "1";
-      quote.style.transform = "translateX(-50%) translateY(0)";
+      quote.style.transform = "translateX(-50%) translateY(-50%)";
     })
     .on("leave", () => {
       const quote = document.getElementById("black-room-quote");
       quote.style.opacity = "0";
-      quote.style.transform = "translateX(-50%) translateY(60px)";
+      quote.style.transform = "translateX(-50%) translateY(-50%)";
     })
     .addTo(controller);
 
-  // Scene 3: fade out intro, reveal article
-  //   new ScrollMagic.Scene({
-  //     triggerElement: "#intro-scene",
-  //     triggerHook: 0,
-  //     offset: 2600,
-  //     duration: "15%",
-  //   })
-  //     .on("enter", () => {
-  //       document.getElementById("intro-scene").style.opacity = "0";
-  //       document
-  //         .querySelectorAll("#main-container > *:not(#intro-scene)")
-  //         .forEach((el, i) => {
-  //           setTimeout(() => el.classList.add("revealed"), i * 100);
-  //         });
-  //     })
-  //     .on("leave", () => {
-  //       document.getElementById("intro-scene").style.opacity = "1";
-  //     })
-  //     .addTo(controller);
+  // Scene 3: Jaylyn line fades in AFTER gif is gone
+  new ScrollMagic.Scene({
+    triggerElement: "#intro-scene",
+    triggerHook: 0,
+    offset: 300, // starts after GIF has faded
+    duration: "90%",
+  })
+    .on("enter", () => {
+      const jaylyn = document.getElementById("jaylyn-intro-overlay");
+      if (jaylyn) jaylyn.style.opacity = "1";
+    })
+    .on("leave", () => {
+      const jaylyn = document.getElementById("jaylyn-intro-overlay");
+      if (jaylyn) jaylyn.style.opacity = "0";
+    })
+    .addTo(controller);
 }
 
 function wrapChapterHeaders() {

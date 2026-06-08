@@ -31,7 +31,7 @@
 /* ── PARALLAX INTRO SCENE ── */
 #intro-scene {
   position: relative;
-  height: 300vh;
+  height: 150vh;
   background-color: #000;
 }
 
@@ -78,11 +78,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(60px);
+  transform: translateX(-50%) translateY(50px);
   opacity: 0;
-  transition:
-    opacity 0.8s ease,
-    transform 0.8s ease;
+  transition: opacity 0.8s ease;
   z-index: 2;
   background-color: transparent;
   border-left: none;
@@ -108,6 +106,28 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.8); /* shadow so it reads over the gif */
+}
+
+#jaylyn-intro-overlay {
+  position: absolute;
+  top: 58%; /* just below the quote which is at 50% */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  z-index: 2;
+}
+
+#jaylyn-intro-overlay p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: Georgia, serif;
+  font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+  font-style: italic;
+  margin: 0;
+  line-height: 1.5;
 }
 
 /* ── BASE STYLES ── */
@@ -271,6 +291,6 @@ p {
 
   .video-col {
     position: relative; /* disable sticky on mobile */
-    /* top: auto;
+/* top: auto;
     width: 100%;
   } */

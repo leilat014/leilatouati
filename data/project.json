@@ -7,6 +7,12 @@
   },
   {
     "type": "bylines",
+    "content": "Graphics designed by Anika Loganathan, digital production by Leila Touati",
+    "max_size": "450",
+    "credit": ""
+  },
+  {
+    "type": "bylines",
     "content": "By: Carly Heltzel, Grace Gillio, Archana Pisupati, Leila Touati",
     "max_size": "450",
     "credit": ""
@@ -27,11 +33,12 @@
     "type": "photo",
     "content": "Trapped in Dark Room.GIF",
     "max_size": "1200",
-    "credit": "Graphic by Anika Loganathan"
+    "credit": ""
   },
   {
     "type": "text",
     "content": "This is how Jaylyn Harris, president of Black Student Union, experiences Cal Poly.\n",
+    "max_size": "body",
     "credit": ""
   },
   {

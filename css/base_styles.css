@@ -38,7 +38,7 @@ header h5{
 }
 .headline-wrapper .bylines .g-by{
     font-family: var(--fontSerif);
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 400;
     font-style: italic;
     opacity: 0.8;
