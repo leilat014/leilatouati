@@ -4,7 +4,6 @@
       <p id="ratio-label">Cal Poly has roughly 22,000 enrolled students...</p>
     </div>
     <div id="ratio-grid"></div>
-    <p id="ratio-footnote">Each figure shown here represents 100 students.</p>
   </div>
 </div>
 
@@ -177,13 +176,13 @@
       footnote.classList.remove("visible");
     } else if (progress < 0.6) {
       label.textContent =
-        "Each figure represents 100 students. Keep scrolling.";
+        "But only 0.8% identify as Black or African American.";
       footnote.classList.remove("visible");
     } else if (progress < 0.85) {
-      label.textContent = "Only 0.8% identify as Black or African American.";
+      label.textContent = "That's exactly 182 students on the entire campus.";
       footnote.classList.remove("visible");
     } else if (progress < 0.95) {
-      label.textContent = "That's exactly 182 students on the entire campus.";
+      label.textContent = "Each figure here represents 100 students.";
       footnote.classList.remove("visible");
     } else {
       label.textContent = "2 figures out of 223. That is what 0.8% looks like.";

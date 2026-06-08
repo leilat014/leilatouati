@@ -46,51 +46,6 @@ function initVideoAutoplay() {
   });
 }
 
-// function wrapTextVideoSections() {
-//   const container = document.getElementById('main-container');
-//   const children = Array.from(container.children);
-
-//   children.forEach(child => {
-//     if (!child.classList.contains('g-video-wrapper')) return;
-
-//     const prevEl = child.previousElementSibling;
-//     if (!prevEl || !prevEl.classList.contains('body-size')) return;
-
-//     // collect all consecutive body-size siblings before this video
-//     // so the sticky video sits beside multiple paragraphs
-//     const textBlocks = [];
-//     let cursor = prevEl;
-//     while (cursor && cursor.classList.contains('body-size')) {
-//       textBlocks.unshift(cursor);
-//       cursor = cursor.previousElementSibling;
-//     }
-
-//     // only pair if there are text blocks
-//     if (textBlocks.length === 0) return;
-
-//     const pair = document.createElement('div');
-//     pair.className = 'text-video-pair';
-
-//     const textCol = document.createElement('div');
-//     textCol.className = 'text-col';
-
-//     const videoCol = document.createElement('div');
-//     videoCol.className = 'video-col';
-
-//     // insert wrapper before the first text block
-//     container.insertBefore(pair, textBlocks[0]);
-
-//     // move text blocks into text column
-//     textBlocks.forEach(block => textCol.appendChild(block));
-
-//     // move video into video column
-//     videoCol.appendChild(child);
-
-//     pair.appendChild(textCol);
-//     pair.appendChild(videoCol);
-//   });
-// }
-
 function tagElements(allPhotos, allTextDivs) {
   if (allPhotos[0]) {
     allPhotos[0].id = "trapped-gif-wrapper";
@@ -192,27 +147,27 @@ function buildIntroScene() {
 function initScrollMagic() {
   const controller = new ScrollMagic.Controller();
 
-  // Scene 1: fade in the GIF
+  // Scene 1: GIF fades IN first
   new ScrollMagic.Scene({
     triggerElement: "#intro-scene",
     triggerHook: 0,
     offset: 50,
-    duration: "30%", // GIF disappears halfway through the scene
+    duration: "30%",
   })
     .on("enter", () => {
       document.getElementById("trapped-gif").style.opacity = "1";
     })
     .on("leave", () => {
-      document.getElementById("trapped-gif").style.opacity = "0";
+      document.getElementById("trapped-gif").style.opacity = "0"; // GIF fades OUT
     })
     .addTo(controller);
 
-  // Scene 2: fade in the quote — happens immediately on scroll
+  // Scene 2: quote fades IN after GIF is gone
   new ScrollMagic.Scene({
     triggerElement: "#intro-scene",
     triggerHook: 0,
-    offset: 100,
-    duration: "70%",
+    offset: 200, // starts after GIF has faded
+    duration: "55%",
   })
     .on("enter", () => {
       const quote = document.getElementById("black-room-quote");
@@ -221,17 +176,17 @@ function initScrollMagic() {
     })
     .on("leave", () => {
       const quote = document.getElementById("black-room-quote");
-      quote.style.opacity = "0";
+      quote.style.opacity = "0"; // quote fades OUT
       quote.style.transform = "translateX(-50%) translateY(-50%)";
     })
     .addTo(controller);
 
-  // Scene 3: Jaylyn line fades in AFTER gif is gone
+  // Scene 3: Jaylyn line fades IN after quote is gone
   new ScrollMagic.Scene({
     triggerElement: "#intro-scene",
     triggerHook: 0,
-    offset: 300, // starts after GIF has faded
-    duration: "90%",
+    offset: 400, // starts after quote has faded
+    duration: "75%",
   })
     .on("enter", () => {
       const jaylyn = document.getElementById("jaylyn-intro-overlay");
@@ -244,14 +199,95 @@ function initScrollMagic() {
     .addTo(controller);
 }
 
+function buildProgressNav() {
+  const chapters = [
+    { id: "chapter-first-steps", label: "The first steps on campus" },
+    { id: "chapter-home", label: "Home, not-so-sweet, home" },
+    { id: "chapter-bias", label: "Encounters with bias" },
+    { id: "chapter-rep", label: "Seeking representation" },
+    { id: "chapter-action", label: "Performative action" },
+    { id: "chapter-sanctuary", label: "A sanctuary" },
+    { id: "chapter-light", label: "Finding the light" },
+  ];
+
+  // build the nav element
+  const nav = document.createElement("nav");
+  nav.id = "progress-nav";
+
+  chapters.forEach((chapter, i) => {
+    const item = document.createElement("div");
+    item.className = "progress-item";
+    item.dataset.target = chapter.id;
+
+    const dot = document.createElement("div");
+    dot.className = "progress-dot";
+
+    const label = document.createElement("span");
+    label.className = "progress-label";
+    label.textContent = chapter.label;
+
+    item.appendChild(dot);
+    item.appendChild(label);
+    nav.appendChild(item);
+
+    // clicking jumps to that chapter
+    item.addEventListener("click", () => {
+      const target = document.getElementById(chapter.id);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
+  document.body.appendChild(nav);
+
+  // watch which chapter is in view and highlight it
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.id;
+        const item = nav.querySelector(`[data-target="${id}"]`);
+        if (!item) return;
+
+        if (entry.isIntersecting) {
+          // remove active from all, add to current
+          nav.querySelectorAll(".progress-item").forEach((el) => {
+            el.classList.remove("active");
+            el.classList.remove("passed");
+          });
+
+          // mark everything before this as passed
+          let sibling = item.previousElementSibling;
+          while (sibling) {
+            sibling.classList.add("passed");
+            sibling = sibling.previousElementSibling;
+          }
+
+          item.classList.add("active");
+        }
+      });
+    },
+    {
+      threshold: 0.3,
+      rootMargin: "-10% 0px -60% 0px", // triggers when chapter is near top of viewport
+    },
+  );
+
+  // observe each chapter scene
+  chapters.forEach((chapter) => {
+    const el = document.getElementById(chapter.id);
+    if (el) observer.observe(el);
+  });
+}
+
 function wrapChapterHeaders() {
   const chapterTitles = {
     "chapter-first-steps": "The first steps on campus",
     "chapter-home": "Home, not-so-sweet, home",
-    "chapter-bias": "Encounters with bias and discrimination",
+    "chapter-bias": "Encounters with bias",
     "chapter-rep": "Seeking representation",
-    "chapter-action": "Performative action and deaf ears",
-    "chapter-sanctuary": "A sanctuary in cultural clubs",
+    "chapter-action": "Performative action",
+    "chapter-sanctuary": "A sanctuary",
     "chapter-light": "Finding the light",
   };
 
@@ -263,6 +299,10 @@ function wrapChapterHeaders() {
     if (headers.length < 7) return; // not all loaded yet
 
     clearInterval(interval);
+    setTimeout(() => {
+      buildProgressNav();
+    }, 800);
+
     console.log("all chapter headers loaded, wrapping now");
 
     const embeds = document.querySelectorAll(".embed-wrapper");
