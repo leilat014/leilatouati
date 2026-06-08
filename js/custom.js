@@ -287,7 +287,7 @@ function wrapChapterHeaders() {
     "chapter-bias": "Encounters with bias",
     "chapter-rep": "Seeking representation",
     "chapter-action": "Performative action",
-    "chapter-sanctuary": "A sanctuary",
+    "chapter-sanctuary": "A sanctuary in cultural clubs",
     "chapter-light": "Finding the light",
   };
 
